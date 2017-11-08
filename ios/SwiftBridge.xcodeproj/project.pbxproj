@@ -24,6 +24,7 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		1C332E401FA932540012756F /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C332E3F1FA932540012756F /* CalendarManager.swift */; };
 		1C332E5D1FA9329B0012756F /* CalendarManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C332E5C1FA9329B0012756F /* CalendarManagerBridge.m */; };
+		1F37E740DF9D48DD9BEA272D /* libBeaconBroadcast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA2D67C66124631B8CA47A6 /* libBeaconBroadcast.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -105,6 +106,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
+		};
+		1C331B981FB3A218001B1E99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EFB75DA0A044A648D83C7B2 /* BeaconBroadcast.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = BeaconBroadcast;
 		};
 		1C332E461FA932550012756F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -324,10 +332,12 @@
 		2D02E47B1E0B4A5D006451C7 /* SwiftBridge-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftBridge-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* SwiftBridge-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftBridge-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE96BCB108B4BA49AD7F5D0 /* libRNiBeacon.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNiBeacon.a; sourceTree = "<group>"; };
+		4EFB75DA0A044A648D83C7B2 /* BeaconBroadcast.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BeaconBroadcast.xcodeproj; path = "../node_modules/react-native-ibeacon-simulator/BeaconBroadcast.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		AEA2D67C66124631B8CA47A6 /* libBeaconBroadcast.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBeaconBroadcast.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +367,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				43BCACB9BFC14543818A3B9F /* libRNiBeacon.a in Frameworks */,
+				1F37E740DF9D48DD9BEA272D /* libBeaconBroadcast.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,10 +508,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1C331B951FB3A218001B1E99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C331B991FB3A218001B1E99 /* libBeaconBroadcast.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1C7B25B61FB13BA800FD7157 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				4AE96BCB108B4BA49AD7F5D0 /* libRNiBeacon.a */,
+				AEA2D67C66124631B8CA47A6 /* libBeaconBroadcast.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -547,6 +567,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				044287AF461A47FFB191685B /* RNiBeacon.xcodeproj */,
+				4EFB75DA0A044A648D83C7B2 /* BeaconBroadcast.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -714,6 +735,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 1C331B951FB3A218001B1E99 /* Products */;
+					ProjectRef = 4EFB75DA0A044A648D83C7B2 /* BeaconBroadcast.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
@@ -831,6 +856,13 @@
 			fileType = archive.ar;
 			path = libReact.a;
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1C331B991FB3A218001B1E99 /* libBeaconBroadcast.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBeaconBroadcast.a;
+			remoteRef = 1C331B981FB3A218001B1E99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		1C332E471FA932550012756F /* libRCTBlob-tvOS.a */ = {
@@ -1160,6 +1192,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
+					"$(SRCROOT)/../node_modules/react-native-ibeacon-simulator",
 				);
 				INFOPLIST_FILE = SwiftBridgeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1187,6 +1220,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
+					"$(SRCROOT)/../node_modules/react-native-ibeacon-simulator",
 				);
 				INFOPLIST_FILE = SwiftBridgeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1215,6 +1249,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
+					"$(SRCROOT)/../node_modules/react-native-ibeacon-simulator",
 				);
 				INFOPLIST_FILE = SwiftBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1242,6 +1277,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
+					"$(SRCROOT)/../node_modules/react-native-ibeacon-simulator",
 				);
 				INFOPLIST_FILE = SwiftBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1273,6 +1309,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
+					"$(SRCROOT)/../node_modules/react-native-ibeacon-simulator",
 				);
 				INFOPLIST_FILE = "SwiftBridge-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1307,6 +1344,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon",
+					"$(SRCROOT)/../node_modules/react-native-ibeacon-simulator",
 				);
 				INFOPLIST_FILE = "SwiftBridge-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

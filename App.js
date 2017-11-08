@@ -15,6 +15,9 @@ import {
   DeviceEventEmitter
 } from 'react-native';
 import Beacons from 'react-native-beacons-manager'
+// import Bleacon from 'bleacon'
+// import BeaconBroadcast from 'beaconbroadcast'
+import BeaconBroadcast from 'react-native-ibeacon-simulator'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -25,6 +28,23 @@ const instructions = Platform.select({
 
 export default class App extends Component<{}> {
   componentDidMount() {
+
+    console.log('BeaconBroadcast:', BeaconBroadcast)
+
+    const uuid = '3F643DCB-DD1E-4300-8FD6-91543CD0E648'
+    BeaconBroadcast.startAdvertisingBeaconWithString(uuid, 'identifier', 1, 2)
+    // const major = 5
+    // const minor = 5
+    // const meausredPower = -59
+    //
+    // Bleacon.startAdvertising(uuid, major, minor, measuredPower)
+    //
+    // Bleacon.startScanning()
+    //
+    // Bleacon.on('discover', function(bleacon) {
+    //   console.log('discover:', bleacon)
+    // })
+
     const region = {
       identifier: 'Link',
       uuid: '3F643DCB-DD1E-4300-8FD6-91543CD0E648'
@@ -67,10 +87,10 @@ export default class App extends Component<{}> {
     //     console.log(o)
     //   })
 
-    console.log('NativeModules.Sender:', NativeModules.Sender)
-
-    NativeModules.Sender.initialize()
-    setTimeout(NativeModules.Sender.start, 5000)
+    // console.log('NativeModules.Sender:', NativeModules.Sender)
+    //
+    // NativeModules.Sender.initialize()
+    // setTimeout(NativeModules.Sender.start, 5000)
 
     // console.log("NativeModules.Receiver:", NativeModules.Receiver)
     // NativeModules.Receiver.initialize()
