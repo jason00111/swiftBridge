@@ -1,0 +1,51 @@
+{
+  "_from": "react-native-ibeacon-simulator",
+  "_id": "react-native-ibeacon-simulator@1.0.10",
+  "_inBundle": false,
+  "_integrity": "sha1-TaVl5qOhphyhs+AMHhFENth21To=",
+  "_location": "/react-native-ibeacon-simulator",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-ibeacon-simulator",
+    "name": "react-native-ibeacon-simulator",
+    "escapedName": "react-native-ibeacon-simulator",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-ibeacon-simulator/-/react-native-ibeacon-simulator-1.0.10.tgz",
+  "_shasum": "4da565e6a3a1a61ca1b3e00c1e114436d876d53a",
+  "_spec": "react-native-ibeacon-simulator",
+  "_where": "/Users/spencerdezartsmith/Desktop/Programming/swiftBridge",
+  "author": {
+    "name": "Flow"
+  },
+  "bugs": {
+    "url": "https://github.com/williamtran29/react-native-ibeacon-simulator/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A cool package for simulate your iOS devices as beacon",
+  "homepage": "https://github.com/williamtran29/react-native-ibeacon-simulator#readme",
+  "keywords": [
+    "react-native",
+    "react",
+    "bluetooth",
+    "ibeacon",
+    "beacon simulator"
+  ],
+  "license": "MIT",
+  "name": "react-native-ibeacon-simulator",
+  "nativePackage": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamtran29/react-native-ibeacon-simulator.git"
+  },
+  "version": "1.0.10"
+}

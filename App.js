@@ -17,7 +17,7 @@ import {
 import Beacons from 'react-native-beacons-manager'
 // import Bleacon from 'bleacon'
 // import BeaconBroadcast from 'beaconbroadcast'
-import BeaconBroadcast from 'react-native-ibeacon-simulator'
+import BeaconBroadcast from './react-native-ibeacon-simulator'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
